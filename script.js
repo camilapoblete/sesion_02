@@ -32,7 +32,7 @@ function setup() {
     if (dondeEstas) {
         portada();
     } else {
-        pagina();
+        página();
     }
 }
 
@@ -42,7 +42,7 @@ function portada() {
     select("a:nth-child(1)").style("font-weight", "bold").style("color", "#000000");
 }
 
-function pagina() {
+function página() {
     createSpan("Estás en la página").parent("title");
     createElement('p','Y he pensado que '+random(lorenIpsum)+' sería un excelente lugar para vivir').parent(loPrincipal);
     select("a:nth-child(2)").style("font-weight", "bold").style("color", "#000000");
