@@ -27,8 +27,8 @@ var lorenIpsum = ["Irlanda","Noruega","Australia","Canadá","Nueva Zelanda"];
 function setup() {
     noCanvas();
     createElement("h1", elSaludo).parent(elEncabezado).id("title");
-    createA("index.html", "index").parent("vinculos");
-    createA("page.html", "page").parent("vinculos");
+    createA("Portada", "Portada").parent("vinculos");
+    createA("la página", "Página").parent("vinculos");
     if (dondeEstas) {
         portada();
     } else {
