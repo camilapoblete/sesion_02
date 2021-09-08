@@ -22,28 +22,28 @@ var elEncabezado = document.querySelector("header");
 
 var loPrincipal = document.querySelector("main");
 
-var lorenIpsum = ["Irlanda","Noruega","Australia","Canadá","Nueva Zelanda"];
+var lorenIpsum = ["Irlanda","Noruega","Nueva Zelanda","Canadá","Australia"];
 
 function setup() {
     noCanvas();
     createElement("h1", elSaludo).parent(elEncabezado).id("title");
-    createA("la portada", "Portada").parent("vinculos");
-    createA("la página", "Página").parent("vinculos");
+    createA("index.html", "index").parent("vinculos");
+    createA("page.html", "page").parent("vinculos");
     if (dondeEstas) {
         portada();
     } else {
-        página();
+        pagina();
     }
 }
 
-function Portada() {
-    createSpan("Estás en la portada").parent("title");
-    createElement('p','Y he pensado que '+random(lorenIpsum)+' sería un excelente lugar para vivir').parent(loPrincipal);
+function portada() {
+    createSpan("Estás en index.html").parent("title");
+    createElement('p','Y he pensado seriamente que '+random(lorenIpsum)+' es un buen lugar para vivir').parent(loPrincipal);
     select("a:nth-child(1)").style("font-weight", "bold").style("color", "#000000");
 }
 
-function Página() {
-    createSpan("Estás en la página").parent("title");
-    createElement('p','Y he pensado que '+random(lorenIpsum)+' sería un excelente lugar para vivir').parent(loPrincipal);
+function pagina() {
+    createSpan("Estás en page.html").parent("title");
+    createElement('p','Sería maravilloso ir a '+random(lorenIpsum)+' y conocer lugares nuevos').parent(loPrincipal);
     select("a:nth-child(2)").style("font-weight", "bold").style("color", "#000000");
 }
