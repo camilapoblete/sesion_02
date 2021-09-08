@@ -43,7 +43,7 @@ function portada() {
 }
 
 function pagina() {
-    createSpan("Estás en la página).parent("title");
+    createSpan("Estás en la página").parent("title");
     createElement('p','Sería maravilloso ir a '+random(lorenIpsum)+' y conocer lugares nuevos').parent(loPrincipal);
     select("a:nth-child(2)").style("font-weight", "bold").style("color", "#000000");
 }
