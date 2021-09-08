@@ -27,7 +27,7 @@ var lorenIpsum = ["Irlanda","Noruega","Australia","Canadá","Nueva Zelanda"];
 function setup() {
     noCanvas();
     createElement("h1", elSaludo).parent(elEncabezado).id("title");
-    createA("Portada", "Portada").parent("vinculos");
+    createA("la portada", "Portada").parent("vinculos");
     createA("la página", "Página").parent("vinculos");
     if (dondeEstas) {
         portada();
@@ -36,13 +36,13 @@ function setup() {
     }
 }
 
-function portada() {
+function Portada() {
     createSpan("Estás en la portada").parent("title");
     createElement('p','Y he pensado que '+random(lorenIpsum)+' sería un excelente lugar para vivir').parent(loPrincipal);
     select("a:nth-child(1)").style("font-weight", "bold").style("color", "#000000");
 }
 
-function página() {
+function Página() {
     createSpan("Estás en la página").parent("title");
     createElement('p','Y he pensado que '+random(lorenIpsum)+' sería un excelente lugar para vivir').parent(loPrincipal);
     select("a:nth-child(2)").style("font-weight", "bold").style("color", "#000000");
