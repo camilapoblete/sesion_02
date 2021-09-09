@@ -38,12 +38,12 @@ function setup() {
 
 function portada() {
     createSpan("Estás en la portada").parent("title");
-    createElement('p','Y he pensado seriamente que '+random(lorenIpsum)+' es un buen lugar para vivir').parent(loPrincipal);
+    createElement('p','Y he pensado seriamente que '+random(lorenIpsum)+' es un buen lugar para vivir.').parent(loPrincipal);
     select("a:nth-child(1)").style("font-weight", "bold").style("color", "#000000");
 }
 
 function pagina() {
     createSpan("Estás en la página").parent("title");
-    createElement('p','Sería maravilloso ir a '+random(lorenIpsum)+' y conocer lugares nuevos').parent(loPrincipal);
+    createElement('p','Sería maravilloso ir a '+random(lorenIpsum)+' y conocer lugares nuevos.').parent(loPrincipal);
     select("a:nth-child(2)").style("font-weight", "bold").style("color", "#000000");
 }
